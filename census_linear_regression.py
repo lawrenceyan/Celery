@@ -1,5 +1,3 @@
-__author__ = 'chuang'
-
 from numpy import array,ones,linalg
 from pylab import plot,show
 
