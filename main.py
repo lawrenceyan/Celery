@@ -66,6 +66,7 @@ def return_average_salary():
 
     data = requests.get("http://api.census.gov/data/2015/acs1", params=params)
     return data.json()[1][0], data.json()[1][1]
+
 state, salary = return_average_salary()
 result = 'Your expected salary is ${} at {}'.format(salary, state)
 print(result)
